@@ -58,6 +58,10 @@ body {
   z-index: 999;
 }
 
+.header a {
+  text-decoration: none;
+}
+
 .logo {
   content: "My Logo";
   color: var(--b400);
