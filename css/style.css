@@ -63,7 +63,7 @@ body {
 }
 
 .logo {
-  content: "My Logo";
+  content: "Timothy";
   color: var(--b400);
   font-size: 18px;
   font-weight: bold;
@@ -72,19 +72,13 @@ body {
 }
 
 .hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
   width: 42px;
   padding: 8px;
 }
 
-.hamburger-menu div {
-  height: 3px;
+.hamburger-menu img {
   width: 100%;
-  background-color: var(--b400);
-  border-radius: 10px;
+  max-width: 100%;
 }
 
 .flex-nav {
