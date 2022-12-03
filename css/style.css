@@ -58,6 +58,10 @@ body {
   z-index: 999;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
   content: "My Logo";
   color: var(--b400);
@@ -68,19 +72,13 @@ body {
 }
 
 .hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
   width: 42px;
   padding: 8px;
 }
 
-.hamburger-menu div {
-  height: 3px;
+.hamburger-menu img {
+  max-width: 100%;
   width: 100%;
-  background-color: var(--b400);
-  border-radius: 10px;
 }
 
 .flex-nav {
@@ -208,6 +206,7 @@ body {
 .card img {
   max-width: 100%;
   border-radius: 15px;
+  width: 100%;
 }
 
 .project-title {
@@ -221,20 +220,21 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  list-style: none;
 }
 
-.explaining-spans span {
+.explaining-spans li {
   color: var(--n60);
   font-size: 13px;
   text-align: start;
 }
 
-.explaining-spans span:first-child {
+.explaining-spans li:first-child {
   font-weight: 600;
   color: var(--n600);
 }
 
-.explaining-spans span:nth-child(2n) {
+.explaining-spans li:nth-child(2n) {
   background-color: var(--n50);
   width: 8px;
   max-width: 8px;
@@ -242,7 +242,7 @@ body {
   border-radius: 25%;
 }
 
-.explaining-spans span:nth-child(3) {
+.explaining-spans li:nth-child(3) {
   text-align: center;
 }
 
@@ -376,6 +376,7 @@ body {
 
 .contact {
   background-color: var(--n0);
+  display: none;
 }
 
 .contact-wrapper {
