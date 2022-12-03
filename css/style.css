@@ -83,6 +83,10 @@ body {
   border-radius: 10px;
 }
 
+.flex-nav {
+  display: none;
+}
+
 .main-content {
   position: relative;
   top: 50px;
