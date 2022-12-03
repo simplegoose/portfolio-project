@@ -216,25 +216,25 @@ a {
   color: var(--n800);
 }
 
-.explaining-spans {
+.explaining-list {
   display: flex;
   align-items: center;
   gap: 10px;
   list-style: none;
 }
 
-.explaining-spans li {
+.explaining-list .list-item {
   color: var(--n60);
   font-size: 13px;
   text-align: start;
 }
 
-.explaining-spans li:first-child {
+.explaining-list .list-item:first-child {
   font-weight: 600;
   color: var(--n600);
 }
 
-.explaining-spans li:nth-child(2n) {
+.explaining-list .list-item:nth-child(2n) {
   background-color: var(--n50);
   width: 8px;
   max-width: 8px;
@@ -242,7 +242,7 @@ a {
   border-radius: 25%;
 }
 
-.explaining-spans li:nth-child(3) {
+.explaining-list .list-item:nth-child(3) {
   text-align: center;
 }
 
