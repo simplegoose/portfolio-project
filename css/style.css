@@ -135,14 +135,6 @@ body {
   font-weight: 700;
 }
 
-  width: 100%;
-  max-width: 100%;
-}
-
-.flex-nav {
-  display: none;
-}
-
 .main-content {
   position: relative;
   top: 50px;
