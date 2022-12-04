@@ -58,12 +58,12 @@ body {
   z-index: 999;
 }
 
-a {
+.header a {
   text-decoration: none;
 }
 
 .logo {
-  content: "My Logo";
+  content: "Timothy";
   color: var(--b400);
   font-size: 18px;
   font-weight: bold;
@@ -133,6 +133,14 @@ a {
   color: var(--n0);
   opacity: 1;
   font-weight: 700;
+}
+
+  width: 100%;
+  max-width: 100%;
+}
+
+.flex-nav {
+  display: none;
 }
 
 .main-content {
