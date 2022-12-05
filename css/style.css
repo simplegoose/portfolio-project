@@ -253,12 +253,12 @@ body {
 }
 
 .badges-wrapper {
-  display: flex;
-  gap: 12px;
   width: 70%;
 }
 
 .badge {
+  float: left;
+  margin-right: 12px;
   border-radius: 8px;
   font-size: 12px;
   background-color: var(--b50);
