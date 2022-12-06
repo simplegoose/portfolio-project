@@ -373,3 +373,52 @@ body {
   border-radius: 50%;
   border: 2px solid var(--n0);
 }
+
+.contact{
+  background-color:var(--n0);
+  text-align: center;
+}
+.contact_wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding:120px 24px 45px;
+  background-color:var(--b400);
+  background-image: url("../assets/images/mobile/contact.png");
+  background-repeat: no-repeat;
+  background-position-x: 38vw;
+  background-position-y: 0;
+  background-size: 265px 92%;
+}
+
+.contact .section-header{
+  color: white;
+}
+
+.contact p{
+  color: var(--b50);
+  font-size: 20px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 12px;
+}
+.contact form{
+  margin-top:40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact input, .contact textarea{
+  font-weight: 400;
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+  line-height: 20px;
+  padding: 14px;
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+
+}
+
