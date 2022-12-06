@@ -380,6 +380,7 @@ body {
 }
 
 .contact_wrapper {
+  border-top-left-radius: 25% 10%;
   display: flex;
   flex-direction: column;
   gap: 12px;
