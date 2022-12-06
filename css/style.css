@@ -279,6 +279,21 @@ body {
   font-weight: 500;
 }
 
+.buttons:hover {
+  background-color: var(--b400);
+  color: var(--n0);
+}
+
+.buttons:disabled {
+  background-color: var(--n300);
+  border: 1px solid var(--n300);
+}
+
+.buttons:focus {
+  background-color: #2230d2;
+  color: var(--n0);
+}
+
 .about {
   background-color: var(--n0);
   padding: 100px 25px;
