@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'Poppins';
   src: url(../assets/fonts/Poppins-Regular.ttf) format('truetype');
-  font-style: normal;    
+  font-style: normal;
   font-weight: 400;
 }
 
@@ -26,7 +26,7 @@
 @font-face {
   font-family: 'Poppins';
   src: url(../assets/fonts/Poppins-Bold.ttf) format('truetype');
-  font-style: normal;    
+  font-style: normal;
   font-weight: 900;
 }
 
@@ -38,6 +38,10 @@
   padding: 0;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 *::-webkit-scrollbar {
   width: 6px;
   background-color: var(--n0);
@@ -46,10 +50,6 @@
 *::-webkit-scrollbar-thumb {
   background-color: var(--b300);
   border-radius: 6px;
-}
-
-* {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -515,17 +515,17 @@ body {
   .background-filter {
     display: none;
   }
-  
+
   .nav-items-wrapper {
     width: 100%;
     height: 100%;
     position: static;
   }
-  
+
   .close {
     display: none;
   }
-  
+
   .flex-nav .nav-items-wrapper ul {
     position: static;
     width: 100%;
@@ -533,14 +533,14 @@ body {
     display: flex;
     flex-direction: row;
   }
-  
+
   .flex-nav .nav-items-wrapper ul li {
     font-size: 15px;
     padding: 8px 12px;
     color: var(--n600);
     font-weight: 500;
   }
-  
+
   .main-content {
     position: static;
   }
@@ -551,7 +551,7 @@ body {
     padding: 48px 0 77px 35px;
     height: auto;
   }
-  
+
   .hero {
     background-image: url('/assets/images/desktop/hero-bg.png');
     background-repeat: no-repeat;
@@ -568,12 +568,12 @@ body {
   .section-header {
     max-width: 450px;
   }
-  
+
   .projects {
     padding: 150px 100px;
     gap: 140px;
   }
-  
+
   .card {
     flex-direction: row;
     gap: 50px;
@@ -602,7 +602,7 @@ body {
   .explaining-list .list-item:nth-child(2n) {
     border-radius: 50%;
   }
-  
+
   .buttons {
     width: auto;
     margin: 0 auto 0 0;
@@ -617,7 +617,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
   }
-  
+
   .about .section-a {
     flex: 2 2 40%;
   }
@@ -625,28 +625,28 @@ body {
   .about .section-b {
     flex: 3 3 60%;
   }
-  
+
   .about .description {
     font-size: 0.7em;
     color: var(--n600);
   }
-  
+
   .about .socials {
     padding: 12px 8px 0;
     margin-bottom: 0;
   }
-  
+
   .skills .skills-list {
     display: flex;
     flex-direction: column;
     width: 100%;
     list-style: none;
   }
-  
+
   .skills-list .skill-item .skill-set {
     grid-template-columns: repeat(auto-fit, clamp(120px, 120px, 120px));
   }
-  
+
   .skill-item .skill-set .skill {
     flex-direction: column;
     font-size: 0.5em;
@@ -654,7 +654,7 @@ body {
     font-weight: 500;
     align-items: flex-start;
   }
-  
+
   .contact_wrapper {
     border-top-left-radius: 8% 8%;
     gap: 24px;
@@ -668,22 +668,22 @@ body {
     max-width: 570px;
     margin: auto;
   }
-  
+
   .contact .section-header {
     color: white;
   }
-  
+
   .contact p {
     max-width: 700px;
     margin: auto;
   }
-  
+
   .contact form {
     margin-top: 20px;
     gap: 30px;
     justify-content: center;
   }
-  
+
   .contact input,
   .contact textarea {
     border-radius: unset;
