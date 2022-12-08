@@ -608,6 +608,7 @@ body {
     margin: 0 auto 0 0;
     padding: 15px;
     height: auto;
+    border-radius: 10px;
   }
 
   .about {
