@@ -618,6 +618,13 @@ body {
 
   .card figure {
     flex: 1 1 50%;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+  }
+
+  .card figure:hover {
+    transform: scale(1.02);
   }
 
   .details {
