@@ -315,6 +315,7 @@ body {
   background-color: var(--b50);
   padding: 6px 12px;
   color: var(--b600);
+  font-weight: 500;
 }
 
 .buttons {
