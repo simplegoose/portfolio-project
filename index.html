@@ -17,118 +17,148 @@
       <nav class="hamburger-menu">
         <img src="./assets/images/vectors/Icon - Menu.png" alt="">
       </nav>
+      <nav class="flex-nav">
+        <div class="background-filter"></div>
+        <div class="nav-items-wrapper">
+          <ul>
+            <a href="#portfolio"><li>Portfolio</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#contact"><li>Contact</li></a>
+          </ul>
+          <span class="close">+</span>
+        </div>
+      </nav>
     </header>
-    <nav class="flex-nav">
-      <div class="background-filter"></div>
-      <div class="nav-items-wrapper">
-        <ul>
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-        <span class="close">+</span>
-      </div>
-    </nav>
 
     <main class="main-content">
-      <section class="hero" id="home">
-        <h1 class="section-header">I’m Timothy Glad to see you!</h1>
-        <p class="intro">
-          I’m a software developer! I can help you build a product,
-          feature or website Look through some of my work and experience!
-          If you like what you see and have a project you need coded, don’t hestiate to contact me.
-        </p>
-        <span class="lets-connect">LET’S CONNECT</span>
-        <ul class="socials">
-          <li><a href=""><img src="./assets/images/vectors/twitter.svg" alt=""></a></li>
-          <li><a href=""><img src="./assets/images/vectors/Linkedin.svg" alt=""></a></li>
-          <li><a href=""><img src="./assets/images/vectors/github.svg" alt=""></a></li>
-          <li><a href=""></a><img src="./assets/images/vectors/M.svg" alt=""></li>
-          <li><a href=""><img src="./assets/images/vectors/chill.svg" alt=""></a></li>
-        </ul>
-      </section>
+      <div class="hero-wrapper">
+        <section class="hero" id="home">
+          <h1 class="section-header">I’m Timothy Glad to see you!</h1>
+          <p class="intro">
+            I’m a software developer! I can help you build a product,
+            feature or website Look through some of my work and experience!
+            If you like what you see and have a project you need coded, don’t hestiate to contact me.
+          </p>
+          <span class="lets-connect">LET’S CONNECT</span>
+          <ul class="socials">
+            <li><a href=""><img src="./assets/images/vectors/twitter.svg" alt=""></a></li>
+            <li><a href=""><img src="./assets/images/vectors/Linkedin.svg" alt=""></a></li>
+            <li><a href=""><img src="./assets/images/vectors/github.svg" alt=""></a></li>
+            <li><a href=""></a><img src="./assets/images/vectors/M.svg" alt=""></li>
+            <li><a href=""><img src="./assets/images/vectors/chill.svg" alt=""></a></li>
+          </ul>
+        </section>
+      </div>
 
       <section class="portfolio" id="portfolio">
         <div class="projects">
           <article class="card">
             <figure>
-              <img src="./assets/images/mobile/Snapshoot Portfolio-4.png" alt="" class="project-img">
+              <picture>
+                <source media="(min-width:768px)" srcset="assets/images/desktop/Portoflio-Card/Snapshoot-ova.png">
+                <img 
+                src="./assets/images/mobile/Snapshoot Portfolio-4.png" 
+                alt="" class="project-img">
+              </picture>
             </figure>
-            <h3 class="project-title">Tonic</h3>
-            <ul class="explaining-list">
-              <li class="list-item">CANOPY</li>
-              <li class="list-item"></li>
-              <li class="list-item">Back end dev</li>
-              <li class="list-item"></li>
-              <li class="list-item">2015</li>
-            </ul>
-            <p class="short-description">
-              A daily selection of privately personalized reads; no accounts or sign-ups required.
-            </p>
-            <div class="badges-wrapper">
-              <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+            <div class="details">
+              <h3 class="project-title">Tonic</h3>
+              <ul class="explaining-list">
+                <li class="list-item">CANOPY</li>
+                <li class="list-item"></li>
+                <li class="list-item">Back end dev</li>
+                <li class="list-item"></li>
+                <li class="list-item">2015</li>
+              </ul>
+              <p class="short-description">
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <div class="badges-wrapper">
+                <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+              </div>
+              <button class="buttons" type="button">See Project</button>
             </div>
-            <button class="buttons" type="button">See Project</button>
           </article>
           <article class="card">
             <figure>
-              <img src="./assets/images/mobile/Snapshoot Portfolio-1.png" alt="" class="project-img">
+              <picture>
+                <source media="(min-width:768px)" srcset="assets/images/desktop/Portoflio-Card/Snapshoot-multi.png">
+                <img 
+                src="./assets/images/mobile/Snapshoot Portfolio-1.png" 
+                alt="" class="project-img">
+              </picture>
             </figure>
-            <h3 class="project-title">Multi-Post Stories</h3>
-            <ul class="explaining-list">
-              <li class="list-item">CANOPY</li>
-              <li class="list-item"></li>
-              <li class="list-item">Back end dev</li>
-              <li class="list-item"></li>
-              <li class="list-item">2015</li>
-            </ul>
-            <p class="short-description">
-              A daily selection of privately personalized reads; no accounts or sign-ups required.
-            </p>
-            <div class="badges-wrapper">
-              <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+            <div class="details">
+              <h3 class="project-title">Multi-Post Stories</h3>
+              <ul class="explaining-list">
+                <li class="list-item">CANOPY</li>
+                <li class="list-item"></li>
+                <li class="list-item">Back end dev</li>
+                <li class="list-item"></li>
+                <li class="list-item">2015</li>
+              </ul>
+              <p class="short-description">
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <div class="badges-wrapper">
+                <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+              </div>
+              <button class="buttons" type="button">See Project</button>
             </div>
-            <button class="buttons" type="button">See Project</button>
           </article>
           <article class="card">
             <figure>
-              <img src="./assets/images/mobile/Snapshoot Portfolio-2.png" alt="" class="project-img">
+              <picture>
+                <source media="(min-width:768px)" srcset="assets/images/desktop/Portoflio-Card/Snapshoot-tonic.png">
+                <img 
+                src="./assets/images/mobile/Snapshoot Portfolio-2.png" 
+                alt="" class="project-img">
+              </picture>
             </figure>
-            <h3 class="project-title">Tonic</h3>
-            <ul class="explaining-list">
-              <li class="list-item">CANOPY</li>
-              <li class="list-item"></li>
-              <li class="list-item">Back end dev</li>
-              <li class="list-item"></li>
-              <li class="list-item">2015</li>
-            </ul>
-            <p class="short-description">
-              A daily selection of privately personalized reads; no accounts or sign-ups required.
-            </p>
-            <div class="badges-wrapper">
-              <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+            <div class="details">
+              <h3 class="project-title">Tonic</h3>
+              <ul class="explaining-list">
+                <li class="list-item">CANOPY</li>
+                <li class="list-item"></li>
+                <li class="list-item">Back end dev</li>
+                <li class="list-item"></li>
+                <li class="list-item">2015</li>
+              </ul>
+              <p class="short-description">
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <div class="badges-wrapper">
+                <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+              </div>
+              <button class="buttons" type="button">See Project</button>
             </div>
-            <button class="buttons" type="button">See Project</button>
           </article>
           <article class="card">
             <figure>
-              <img src="./assets/images/mobile/Snapshoot Portfolio-3.png" alt="" class="project-img">
+              <picture>
+                <source media="(min-width:768px)" srcset="assets/images/desktop/Portoflio-Card/Snapshoot-uber.png">
+                <img 
+                src="./assets/images/mobile/Snapshoot Portfolio-3.png" 
+                alt="" class="project-img">
+              </picture>
             </figure>
-            <h3 class="project-title">Multi-Post Stories</h3>
-            <ul class="explaining-list">
-              <li class="list-item">CANOPY</li>
-              <li class="list-item"></li>
-              <li class="list-item">Back end dev</li>
-              <li class="list-item"></li>
-              <li class="list-item">2015</li>
-            </ul>
-            <p class="short-description">
-              A daily selection of privately personalized reads; no accounts or sign-ups required.
-            </p>
-            <div class="badges-wrapper">
-              <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+            <div class="details">
+              <h3 class="project-title">Multi-Post Stories</h3>
+              <ul class="explaining-list">
+                <li class="list-item">CANOPY</li>
+                <li class="list-item"></li>
+                <li class="list-item">Back end dev</li>
+                <li class="list-item"></li>
+                <li class="list-item">2015</li>
+              </ul>
+              <p class="short-description">
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <div class="badges-wrapper">
+                <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+              </div>
+              <button class="buttons" type="button">See Project</button>
             </div>
-            <button class="buttons" type="button">See Project</button>
           </article>
         </div>
       </section>
