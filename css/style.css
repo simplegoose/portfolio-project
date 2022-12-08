@@ -656,6 +656,12 @@ body {
     align-items: flex-start;
   }
 
+  .badge {
+    border-radius: 10px;
+    font-size: 0.5em;
+    padding: 4px 12px;
+  }
+
   .contact_wrapper {
     border-top-left-radius: 8% 8%;
     gap: 24px;
