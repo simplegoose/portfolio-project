@@ -30,6 +30,18 @@
   font-weight: 900;
 }
 
+@keyframes rotate-logo {
+  0% {
+    transform: rotate(900deg);
+    transform-origin: 50% 50%;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+}
+
 *,
 ::after,
 ::before {
@@ -112,6 +124,12 @@ body {
   font-weight: bold;
   padding: 0;
   margin: 0;
+  animation-name: rotate-logo;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
 }
 
 .hamburger-menu {
@@ -329,6 +347,9 @@ body {
   margin: 12px 0;
   font-size: 0.75em;
   font-weight: 500;
+  transition-property: background color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
 }
 
 .buttons:hover {
@@ -592,6 +613,13 @@ body {
 
   .card figure {
     flex: 1 1 50%;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+  }
+
+  .card figure:hover {
+    transform: scale(1.02);
   }
 
   .details {
@@ -670,6 +698,9 @@ body {
     background-image: url("../assets/images/desktop/contact-bg.png");
     background-position: 0 0;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact_wrapper > * {
@@ -683,7 +714,11 @@ body {
 
   .contact p {
     max-width: 700px;
-    margin: auto;
+    transition: all 0.5s linear;
+  }
+
+  .contact p:hover {
+    margin-left: 400px;
   }
 
   .contact form {
