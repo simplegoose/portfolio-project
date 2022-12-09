@@ -717,8 +717,8 @@ body {
     transition: all 0.5s linear;
   }
 
-  .contact p:hover{
-    margin-left: 400px
+  .contact p:hover {
+    margin-left: 400px;
   }
 
   .contact form {
