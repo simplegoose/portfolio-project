@@ -135,6 +135,8 @@ body {
 .hamburger-menu {
   width: 42px;
   padding: 8px;
+  border: none;
+  background-color: inherit;
 }
 
 .hamburger-menu img {
