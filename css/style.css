@@ -32,7 +32,7 @@
 
 @keyframes rotate-logo {
   0% {
-    transform: rotate(900deg);
+    transform: rotate(-720deg);
     transform-origin: 50% 50%;
   }
 
@@ -127,7 +127,7 @@ body {
   animation-name: rotate-logo;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
-  animation-delay: 1s;
+  animation-delay: 0.25s;
   animation-fill-mode: forwards;
   animation-duration: 3s;
 }
@@ -135,6 +135,8 @@ body {
 .hamburger-menu {
   width: 42px;
   padding: 8px;
+  border: none;
+  background-color: inherit;
 }
 
 .hamburger-menu img {
@@ -515,7 +517,7 @@ body {
 
 @media screen and (min-width: 768px) {
   body {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .header {
@@ -598,6 +600,7 @@ body {
 
   .card {
     flex-direction: row;
+    align-items: center;
     gap: 50px;
     padding: 24px;
     border: 1px solid rgba(232, 232, 232, 0.56);
@@ -739,5 +742,11 @@ body {
 
   .contact .buttons {
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 32px;
   }
 }
