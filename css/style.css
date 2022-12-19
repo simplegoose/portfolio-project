@@ -146,11 +146,16 @@ body {
 
 .flex-nav {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: -100%;
   width: 100vw;
   height: 100vh;
   z-index: 1000;
-  display: none;
+  transition: all 0.5s ease-in;
+}
+
+.flex-nav.open {
+  left: 0;
 }
 
 .background-filter {
