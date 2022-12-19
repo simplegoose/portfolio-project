@@ -10,3 +10,9 @@ menuBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   nav.classList.remove('open');
 });
+
+for (let i = 0; i < linksMenu.length; i += 1) {
+  linksMenu[i].addEventListener('click', () => {
+    nav.classList.remove('open');
+  });
+}
