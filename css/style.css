@@ -185,6 +185,10 @@ body {
   color: var(--n0);
 }
 
+.close:hover {
+  cursor: pointer;
+}
+
 .flex-nav .nav-items-wrapper ul {
   position: absolute;
   inset: 0;
@@ -519,6 +523,10 @@ body {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
+
+.hamburger-menu:hover {
+  cursor: pointer;
+ }
 
 @media screen and (min-width: 768px) {
   body {
