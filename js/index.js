@@ -6,6 +6,8 @@ const popUp = document.querySelector('.pop-up-wrapper');
 const seeProjectsBtns = document.querySelectorAll('.projects .buttons');
 const popUpClose = document.querySelector('.pop-up-close');
 
+const projects = document.querySelector('.projects');
+
 const data = {
   0: {
     title: 'Tonic',
@@ -60,6 +62,47 @@ const data = {
     sourceURL: '',
   },
 };
+
+let html = "";
+
+for (let project in data) {
+  html += `<article class="card">
+              <figure>
+                <picture>
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ${data[project].imageURL.desktop}
+                    "
+                  />
+                  <img
+                    src=" ${data[project].imageURL.mobile}"
+                    alt="Demo of blog website"
+                    class="project-img"
+                  />
+                </picture>
+              </figure>
+              <div class="details">
+                <h3 class="project-title"> ${data[project].title} </h3>
+                <ul class="explaining-list">
+                  <li class="list-item"> ${data[project].spans[0]} </li>
+                  <li class="list-item"> ${data[project].spans[1]} </li>
+                  <li class="list-item"> ${data[project].spans[2]} </li>
+                  <li class="list-item"> ${data[project].spans[3]} </li>
+                  <li class="list-item"> ${data[project].spans[4]} </li>
+                </ul>
+                <p class="short-description">
+                  ${data[project].description}
+                </p>
+                <div class="badges-wrapper">
+                  ${data[project].techStack.map((item) => `<span class="badge">${item}</span>`).join('');}
+                </div>
+                <button class="buttons" type="button">See Project</button>
+              </div>
+            </article>`;
+}
+
+projects.innerHTML = html;
 
 menuBtn.addEventListener('click', () => {
   nav.classList.add('open');
