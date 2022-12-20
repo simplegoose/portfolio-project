@@ -92,7 +92,7 @@ body {
   --n900: #091e42;
 
   /* Custom color */
-  --nav-bg: #5367f8b1;
+  --nav-bg: #6070ffe3;
 }
 
 .wrapper {
@@ -146,17 +146,22 @@ body {
 
 .flex-nav {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: -100%;
   width: 100vw;
   height: 100vh;
   z-index: 1000;
-  display: none;
+  transition: all 0.5s ease-in;
+}
+
+.flex-nav.open {
+  left: 0;
 }
 
 .background-filter {
   background-color: var(--nav-bg);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   position: absolute;
   inset: 0;
   width: 100%;
@@ -178,6 +183,10 @@ body {
   right: 25px;
   font-size: 48px;
   color: var(--n0);
+}
+
+.close:hover {
+  cursor: pointer;
 }
 
 .flex-nav .nav-items-wrapper ul {
@@ -513,6 +522,10 @@ body {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
+}
+
+.hamburger-menu:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
