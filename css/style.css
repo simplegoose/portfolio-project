@@ -528,7 +528,8 @@ body {
   cursor: pointer;
 }
 
-.pop-up-wrapper{
+.pop-up-wrapper {
+  display: none;
   position: fixed;
   inset: 0;
   background-color: #c1c7d0dc;
