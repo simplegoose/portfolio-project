@@ -92,7 +92,7 @@ body {
   --n900: #091e42;
 
   /* Custom color */
-  --nav-bg: #5367f8b1;
+  --nav-bg: #6070ffe3;
 }
 
 .wrapper {
@@ -160,8 +160,8 @@ body {
 
 .background-filter {
   background-color: var(--nav-bg);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   position: absolute;
   inset: 0;
   width: 100%;
