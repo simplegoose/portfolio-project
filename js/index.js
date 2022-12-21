@@ -4,6 +4,7 @@ const closeBtn = document.querySelector('.close');
 const linksMenu = nav.getElementsByTagName('a');
 const popUp = document.querySelector('.pop-up-wrapper');
 const popUpClose = document.querySelector('.pop-up-close');
+const form = document.querySelector('form');
 
 const projects = document.querySelector('.projects');
 
@@ -141,4 +142,46 @@ seeProjectsBtns.forEach((btn, index) => {
 
 popUpClose.addEventListener('click', () => {
   popUp.style = null;
+});
+
+function showMessage(input, msg, isError) {
+  const classList = isError ? 'danger' : 'success';
+  input.classList.add(classList);
+
+  if (isError) {
+    input.nextElementSibling.textContent = msg;
+    input.nextElementSibling.style.display = 'block';
+  } else {
+    input.nextElementSibling.style = null;
+  }
+}
+
+function showError(input, msg) {
+  return showMessage(input, msg, true);
+}
+
+function showSuccess(input) {
+  return showMessage(input);
+}
+
+function validateEmail(input) {
+  const regEx = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+  return regEx.test(input.value);
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const email = event.target.user_mail;
+
+  if (!validateEmail(email)) {
+    showError(email, 'Your email should contail lowercase letters only');
+
+    return;
+  }
+
+  showSuccess(email);
+
+  form.submit();
 });
