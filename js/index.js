@@ -151,3 +151,28 @@ form.addEventListener('submit', (event) => {
 
   validateEmail(email) ? showSuccess(email) : showError(email, 'Your email should contail lowercase letters only');
 });
+
+function showMessage(input, msg, isError) {
+  let classList = isError ? 'danger' : 'success';
+  input.classList.add(classList);
+
+  if (isError) {
+    input.nextElementSibling.textContent = msg;
+    input.nextElementSibling.style.display = 'block';
+  }
+}
+
+function showError(input, msg) {
+  return showMessage(input, msg, true);
+}
+
+function showSuccess(input) {
+  return showMessage(input);
+}
+
+function validateEmail(input) {
+  const regEx = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+  return regEx.test(input.value);
+}
+
