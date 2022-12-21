@@ -528,6 +528,110 @@ body {
   cursor: pointer;
 }
 
+.pop-up-wrapper {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: #c1c7d0dc;
+  z-index: 1000;
+  overflow-y: scroll;
+}
+
+.pop-up-content {
+  width: 92%;
+  margin: 3em auto;
+  background-color: var(--n0);
+  padding: 0.75em;
+  border-radius: 0.75em;
+  border: 1px solid #dfe1e6;
+}
+
+.pop-up-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-up-header .pop-up-close {
+  height: 2em;
+  width: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up-header div svg {
+  height: 50%;
+  width: 50%;
+}
+
+.pop-up-content .explaining-list {
+  font-weight: 700;
+}
+
+.pop-up-content .explaining-list .list-item {
+  font-weight: 500;
+}
+
+.pop-up-content .explaining-list .list-item:nth-child(2n) {
+  border-radius: 50%;
+}
+
+.pop-up-img {
+  max-width: 100%;
+  width: 100%;
+  margin: 12px auto;
+  border-radius: 12px;
+}
+
+.pop-up-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pop-up-description {
+  font-weight: 400;
+  font-size: 0.7em;
+  color: var(--n600);
+}
+
+.pop-up-content hr {
+  height: 1px;
+  width: 97%;
+  margin: 9px auto;
+  border: 1px solid var(--n40);
+}
+
+.btns-wrapper {
+  padding: auto 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.btns-wrapper .buttons {
+  width: auto;
+  padding: 0.5em 1em;
+  font-weight: 600;
+  font-size: 0.7em;
+  height: auto;
+}
+
+.btns-wrapper .buttons svg {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+}
+
+.btns-wrapper .buttons:hover > svg path {
+  fill: var(--n0);
+  transition: all 0.5s linear;
+}
+
+.btns-wrapper .buttons:focus > svg path {
+  fill: var(--n0);
+  transition: all 0.5s linear;
+}
+
 @media screen and (min-width: 768px) {
   body {
     font-size: 28px;
@@ -755,6 +859,50 @@ body {
 
   .contact .buttons {
     margin: auto;
+  }
+
+  .pop-up-content {
+    width: 80%;
+    font-style: italic;
+  }
+
+  .pop-up-header div {
+    height: 1em;
+    width: 1em;
+  }
+
+  .pop-up-content .explaining-list {
+    margin: 12px auto;
+  }
+
+  .pop-up-img {
+    border-radius: 12px;
+  }
+
+  .pop-up-details {
+    flex-direction: row;
+    gap: 12px;
+    margin: 2rem auto;
+    font-size: 20px;
+  }
+
+  .pop-up-description {
+    flex-basis: 67%;
+  }
+
+  .badge-buttons {
+    flex-basis: 33%;
+  }
+
+  .btns-wrapper .buttons svg {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+  }
+
+  .pop-up-details .buttons,
+  .pop-up-details .badge {
+    border-radius: 8px;
   }
 }
 
