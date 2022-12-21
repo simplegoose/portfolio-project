@@ -3,13 +3,12 @@ const nav = document.querySelector('.flex-nav');
 const closeBtn = document.querySelector('.close');
 const linksMenu = nav.getElementsByTagName('a');
 const popUp = document.querySelector('.pop-up-wrapper');
-const seeProjectsBtns = document.querySelectorAll('.projects .buttons');
 const popUpClose = document.querySelector('.pop-up-close');
 
 const projects = document.querySelector('.projects');
 
-const data = {
-  0: {
+const data = [
+  {
     title: 'Tonic',
     spans: ['CANOPY', '', 'Back End Dev', '', '2018'],
     imageURL: {
@@ -22,7 +21,7 @@ const data = {
     liveURL: '',
     sourceURL: '',
   },
-  1: {
+  {
     title: 'Multi-Post Stories',
     spans: ['CANOPY', '', 'Back End Dev', '', '2018'],
     imageURL: {
@@ -35,7 +34,7 @@ const data = {
     liveURL: '',
     sourceURL: '',
   },
-  2: {
+  {
     title: 'Tonic',
     spans: ['CANOPY', '', 'Back End Dev', '', '2018'],
     imageURL: {
@@ -48,7 +47,7 @@ const data = {
     liveURL: '',
     sourceURL: '',
   },
-  3: {
+  {
     title: 'Multi-Post Stories',
     spans: ['CANOPY', '', 'Back End Dev', '', '2018'],
     imageURL: {
@@ -61,11 +60,11 @@ const data = {
     liveURL: '',
     sourceURL: '',
   },
-};
+];
 
 let html = '';
 
-Object.keys(data).forEach((key) => {
+data.forEach((item) => {
   html += `
   <article class="card">
     <figure>
@@ -73,30 +72,30 @@ Object.keys(data).forEach((key) => {
         <source
           media="(min-width:768px)"
           srcset="
-            ${data[key].imageURL.desktop}
+            ${item.imageURL.desktop}
           "
         />
         <img
-          src=" ${data[key].imageURL.mobile}"
+          src=" ${item.imageURL.mobile}"
           alt="Demo of blog website"
           class="project-img"
         />
       </picture>
     </figure>
     <div class="details">
-      <h3 class="project-title"> ${data[key].title} </h3>
+      <h3 class="project-title"> ${item.title} </h3>
       <ul class="explaining-list">
-        <li class="list-item"> ${data[key].spans[0]} </li>
-        <li class="list-item"> ${data[key].spans[1]} </li>
-        <li class="list-item"> ${data[key].spans[2]} </li>
-        <li class="list-item"> ${data[key].spans[3]} </li>
-        <li class="list-item"> ${data[key].spans[4]} </li>
+        <li class="list-item"> ${item.spans[0]} </li>
+        <li class="list-item"> ${item.spans[1]} </li>
+        <li class="list-item"> ${item.spans[2]} </li>
+        <li class="list-item"> ${item.spans[3]} </li>
+        <li class="list-item"> ${item.spans[4]} </li>
       </ul>
       <p class="short-description">
-        ${data[key].description}
+        ${item.description}
       </p>
       <div class="badges-wrapper">
-        ${data[key].techStack.map((item) => `<span class="badge">${item}</span>`).join('')}
+        ${item.techStack.map((item) => `<span class="badge">${item}</span>`).join('')}
       </div>
       <button class="buttons" type="button">See Project</button>
     </div>
@@ -118,6 +117,8 @@ for (let i = 0; i < linksMenu.length; i += 1) {
     nav.classList.remove('open');
   });
 }
+
+const seeProjectsBtns = document.querySelectorAll('.projects .buttons');
 
 seeProjectsBtns.forEach((btn, index) => {
   btn.addEventListener('click', () => {
