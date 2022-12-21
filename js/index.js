@@ -1,4 +1,4 @@
-// const menuBtn = document.querySelector('.hamburger-menu');
+const menuBtn = document.querySelector('.hamburger-menu');
 const nav = document.querySelector('.flex-nav');
 const closeBtn = document.querySelector('.close');
 const linksMenu = nav.getElementsByTagName('a');
@@ -144,21 +144,15 @@ popUpClose.addEventListener('click', () => {
   popUp.style = null;
 });
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  const email = event.target['user_mail'];
-
-  validateEmail(email) ? showSuccess(email) : showError(email, 'Your email should contail lowercase letters only');
-});
-
 function showMessage(input, msg, isError) {
-  let classList = isError ? 'danger' : 'success';
+  const classList = isError ? 'danger' : 'success';
   input.classList.add(classList);
 
   if (isError) {
     input.nextElementSibling.textContent = msg;
     input.nextElementSibling.style.display = 'block';
+  } else {
+    input.nextElementSibling.style = null;
   }
 }
 
@@ -176,3 +170,18 @@ function validateEmail(input) {
   return regEx.test(input.value);
 }
 
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const email = event.target.user_mail;
+
+  if (!validateEmail(email)) {
+    showError(email, 'Your email should contail lowercase letters only');
+
+    return;
+  }
+
+  showSuccess(email);
+
+  form.submit();
+});
