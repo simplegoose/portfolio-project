@@ -147,7 +147,7 @@ body {
 .flex-nav {
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -110%;
   width: 100vw;
   height: 100vh;
   z-index: 1000;

@@ -1,12 +1,21 @@
 const menuBtn = document.querySelector('.hamburger-menu');
 const nav = document.querySelector('.flex-nav');
+const header = document.querySelector('.header');
 const closeBtn = document.querySelector('.close');
 const linksMenu = nav.getElementsByTagName('a');
 const popUp = document.querySelector('.pop-up-wrapper');
 const popUpClose = document.querySelector('.pop-up-close');
 const form = document.querySelector('form');
-
 const projects = document.querySelector('.projects');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 80 && window.innerWidth > 768) {
+    header.style.background = '#fff';
+    header.style.borderBottom = '1px solid #f7f7f9';
+  } else {
+    header.style = null;
+  }
+});
 
 const data = [
   {
